@@ -6,6 +6,8 @@
   <title>Fast Home Offer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -34,14 +36,14 @@
         <h1>Get a quotes in two minutes</h1>
         <div class="form-content">
           <h2>Get a FREE No Obligation Offer!</h2>
-          <form action="">
+          <form>
             <div class="form-inpt">
               <label for="">First Name</label>
-              <input class="inpt" type="text" placeholder="First Name">
+              <input id="first_name" class="inpt" type="text" placeholder="First Name">              
             </div>
             <div class="form-inpt">
               <label for="">Last Name</label>
-              <input class="inpt" type="text" placeholder="Last Name">
+              <input id="last_name" class="inpt" type="text" placeholder="Last Name">
             </div>
             <div class="form-inpt">
               <label for="">Number</label>
@@ -53,19 +55,19 @@
             </div>
             <div class="form-inpt">
               <label for="">Street Address</label>
-              <input class="inpt" type="text" placeholder="Street Address">
+              <input id="address" class="inpt" type="text" placeholder="Street Address">
             </div>
             <div class="form-inpt">
               <label for="">Postal Code</label>
-              <input class="inpt" type="number" placeholder="Postal Code">
+              <input id="postal_code" class="inpt" type="number" placeholder="Postal Code">
             </div>
             <div class="form-inpt">
               <label for="">City</label>
-              <input class="inpt" type="text" placeholder="City">
+              <input id="city" class="inpt" type="text" placeholder="City">
             </div>
             <div class="form-inpt">
               <label for="">State</label>
-              <select class="" name="">
+              <select id="state" name="">
                 <option selected="" value=""> - Select - </option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -98,7 +100,7 @@
               </select>
             </div>
 
-            <button class="btn">Submit</button>
+            <button id="submitBtn" class="btn">Submit</button>
 
           </form>
         </div>

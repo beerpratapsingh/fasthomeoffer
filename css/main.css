@@ -59,7 +59,7 @@ p{
   padding: 20px;
 }
 
-.form-content form {
+.form-content > form {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -93,6 +93,8 @@ p{
   box-sizing: border-box;
 }
 .form-inpt{
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 .form-inpt label{
@@ -103,9 +105,13 @@ p{
 }
 .form-inpt select{
   width: 270px;
-  height: 35px;
+  height: 38px;
   border: 1px solid #d2d2d2;
   background: #fff;
+}
+.error{
+  color: red;
+  padding-top: 7px;  
 }
 .btn{
   font-size: 14px;
@@ -174,9 +180,11 @@ footer a{
 
 
 @media only screen and (max-width: 600px) {
+  .logo{
+    margin-right: 10px;
+  }
   .menu ul li a img{
-    max-width: 220px;
-    margin-top: 10px;
+    max-width: 220px;    
   }
   .form-content h2{
     padding-top: 0;
